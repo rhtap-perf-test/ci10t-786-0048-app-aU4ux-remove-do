@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-smca
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci10t-786-0048-tenant/ci10t-786-0048-app/devfile-sample-smca@sha256:db0fc5145ac84e143fd81fe3415e38bc991c00a1a11ac9e8a4f61511649797c4
+        name: my-nodejs
+        resources: {}
+status: {}
